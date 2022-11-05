@@ -690,6 +690,12 @@ button {
 }
 
 /* modal-window  */
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
