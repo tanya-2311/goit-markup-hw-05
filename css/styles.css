@@ -18,7 +18,8 @@
     --border-background: #ECECEC;
     --border-photo: #EEEEEE;
     --color-gradient: rgba(47, 48, 58, 0.4);
-    --idx-backdroup: 100;
+    --idx-header: 100;
+    --idx-backdroup: 1000;
 }
 
 body {
@@ -693,11 +694,12 @@ button {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: var(--idx-backdroup);
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1px);
-    z-index: var(--idx-backdroup);
+
 
 
 }
@@ -709,13 +711,15 @@ button {
     transform: translateX(-50%);
     transform: translateY(-50%);
     width: 528px;
-    height: 581px;
+    min-height: 581px;
     border-radius: 4px;
     background-color: var(--secondary-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.close-button {}
 
 /* main-portfolio */
 .main-portfolio {
