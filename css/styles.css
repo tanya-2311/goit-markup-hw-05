@@ -18,6 +18,7 @@
     --border-background: #ECECEC;
     --border-photo: #EEEEEE;
     --color-gradient: rgba(47, 48, 58, 0.4);
+    --idx-backdroup: 100;
 }
 
 body {
@@ -696,11 +697,15 @@ button {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
+    z-index: var(--idx-backdroup);
 
 
 }
 
 .modal {
+    position: absolute;
+    left: 536px;
+    top: 221px;
     width: 528px;
     height: 581px;
     border-radius: 4px;
