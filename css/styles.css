@@ -704,8 +704,8 @@ button {
 
 .modal {
     position: absolute;
-    left: 536px;
-    top: 221px;
+    left: 50%;
+    top: 50%;
     transform: translateX(-50%);
     transform: translateY(-50%);
     width: 528px;
