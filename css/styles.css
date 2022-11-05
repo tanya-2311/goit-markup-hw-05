@@ -706,10 +706,12 @@ button {
 
 .modal {
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    /* transform: translateX(-50%);
+    transform: translateY(-50%); */
+    transform: translate(-50%, -50%);
+
     width: 528px;
     min-height: 581px;
     border-radius: 4px;
@@ -719,7 +721,20 @@ button {
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.close-button {}
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: solid 1px red;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+
+
+}
 
 /* main-portfolio */
 .main-portfolio {
