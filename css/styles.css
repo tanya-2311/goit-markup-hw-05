@@ -20,6 +20,9 @@
     --color-gradient: rgba(47, 48, 58, 0.4);
     --idx-header: 100;
     --idx-backdroup: 1000;
+    --trns: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 body {
@@ -680,6 +683,7 @@ button {
     color: var(--secondary-text-color);
     background-color: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .button-filtr:focus {
@@ -687,6 +691,7 @@ button {
     background-color: var(--brand-color);
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 /* modal-window  */
@@ -822,4 +827,38 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+}
+
+.team-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform var(--trns);
+    background-color: var(--brand-color);
+}
+
+.portfolio-overlay-text {
+    padding: 0 24px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--secondary-text-color);
+}
+
+.filtr-item:hover .portfolio-overlay {
+    transform: translateY(0);
+
 }
