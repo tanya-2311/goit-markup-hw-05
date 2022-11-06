@@ -21,6 +21,9 @@
     --idx-header: 100;
     --idx-backdroup: 1000;
     --trnz-property-bcg: background-color;
+    --trnz-property-shadow: box-shadow;
+    --trnz-property-border: border;
+    --trnz-property-transform: transform;
     --trnz-property-color: color;
     --trnz-duration: 2500ms;
     --trnz-tim-fnct: cubic-bezier(0.4, 0, 0.2, 1);
@@ -538,8 +541,6 @@ button {
 
 .our-clients {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     gap: 30px;
 }
 
@@ -547,6 +548,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition-property: var(--trnz-property-bcg);
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
     width: 170px;
     height: 92px;
     border: 1px solid currentColor;
@@ -561,7 +567,7 @@ button {
 .clients-link:hover,
 .clients-link:focus {
     color: var(--brand-color);
-    /* border-color: var(--brand-color) */
+
 }
 
 
@@ -630,6 +636,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition-property: var(--trnz-property-color), var(--trnz-property-bcg);
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
     width: 44px;
     height: 44px;
     color: var(--secondary-text-color);
@@ -679,6 +690,13 @@ button {
     background-color: var(--backrground-comand);
     color: var(--primary-text-color);
     cursor: pointer;
+    transition-property: var(--trnz-property-color),
+        var(--trnz-property-bcg),
+        var(--trnz-property-shadow);
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
+
     border-radius: 4px;
     font-family: var(--primery-font);
     font-style: normal;
@@ -788,6 +806,11 @@ button {
     display: block;
     text-decoration: none;
     color: inherit;
+
+    transition-property: var(--trnz-property-border), var(--trnz-property-shadow);
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
 }
 
 .portfolio-link:hover {
@@ -849,12 +872,17 @@ button {
     top: 0;
     left: 0;
     transform: translateY(101%);
+
+    transition-property: var(--trnz-property-transform);
+    transition-duration: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
+
     backdrop-filter: blur(1px);
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: transform var(--trns);
+    /* transition: transform var(--trns); */
     background-color: var(--brand-color);
 }
 
