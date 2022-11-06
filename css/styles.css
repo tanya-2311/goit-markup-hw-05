@@ -749,7 +749,10 @@ button {
     left: 50%;
     /* transform: translateX(-50%);
     transform: translateY(-50%); */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: var(--trnz-property-transform);
+    transition: var(--trnz-duration);
+    transition-timing-function: var(--trnz-tim-fnct);
 
     width: 528px;
     min-height: 581px;
@@ -761,7 +764,7 @@ button {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -65%) scale(0.8);
 
 }
 
@@ -882,7 +885,7 @@ button {
     align-items: center;
     width: 100%;
     height: 100%;
-    /* transition: transform var(--trns); */
+
     background-color: var(--brand-color);
 }
 
