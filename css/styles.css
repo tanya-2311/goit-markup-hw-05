@@ -838,7 +838,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(101%);
     backdrop-filter: blur(1px);
     display: flex;
     align-items: center;
