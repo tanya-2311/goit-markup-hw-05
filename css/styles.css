@@ -25,11 +25,11 @@
     --trnz-property-border: border;
     --trnz-property-transform: transform;
     --trnz-property-color: color;
-    --trnz-duration: 2500ms;
+    --trnz-duration: 250ms;
     --trnz-tim-fnct: cubic-bezier(0.4, 0, 0.2, 1);
 
-    --trns: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* --trns: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 
