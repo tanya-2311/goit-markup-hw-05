@@ -420,12 +420,11 @@ button {
 
 .overlay-text {
     position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 100%;
-    bottom: 0;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
     font-weight: 700;
@@ -527,11 +526,7 @@ button {
 }
 
 /* section class="clients */
-.clients {
 
-    /* padding-top: 94px;
-    margin-bottom: 86px; */
-}
 
 .clients-title {
     margin-bottom: 50px;
@@ -548,7 +543,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    transition-property: var(--trnz-property-bcg);
+    transition-property: color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
