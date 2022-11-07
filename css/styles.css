@@ -808,14 +808,12 @@ button {
 
 }
 
-.portfolio-link:hover,
-.overlay {
+.portfolio-link:hover {
     border: 1px solid color var(--secondary-text-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:focus,
-.overlay {
+.portfolio-link:focus {
     border: 1px solid color var(--secondary-text-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -893,7 +891,12 @@ button {
     color: var(--secondary-text-color);
 }
 
-.filtr-item:hover .portfolio-overlay {
+/* .filtr-item:hover .portfolio-overlay {
     transform: translateY(0);
 
+} */
+
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+    transform: translateY(0);
 }
