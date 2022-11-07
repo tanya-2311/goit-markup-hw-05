@@ -21,11 +21,11 @@
     --color-gradient: rgba(47, 48, 58, 0.4);
     --idx-header: 100;
     --idx-backdroup: 1000;
-    --trnz-property-bcg: background-color;
+    /* --trnz-property-bcg: background-color;
     --trnz-property-shadow: box-shadow;
     --trnz-property-border: border;
     --trnz-property-transform: transform;
-    --trnz-property-color: color;
+    --trnz-property-color: color; */
     --trnz-duration: 250ms;
     --trnz-tim-fnct: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -160,7 +160,7 @@ button {
     display: block;
     position: relative;
 
-    transition-property: var(--trnz-property-color);
+    transition-property: color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -212,7 +212,7 @@ button {
     display: flex;
     align-items: center;
 
-    transition-property: var(--trnz-property-color);
+    transition-property: color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -280,7 +280,7 @@ button {
     border: none;
     padding: 10px 32px;
 
-    transition-property: var(--trnz-property-bcg), var(--trnz-property-color);
+    transition-property: background-color, color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -502,7 +502,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    transition-property: var(--trnz-property-color), var(--trnz-property-bcg);
+    transition-property: color, background-color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -631,7 +631,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    transition-property: var(--trnz-property-color), var(--trnz-property-bcg);
+    transition-property: color, background-color;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -684,9 +684,7 @@ button {
     background-color: var(--backrground-comand);
     color: var(--primary-text-color);
     cursor: pointer;
-    transition-property: var(--trnz-property-color),
-        var(--trnz-property-bcg),
-        var(--trnz-property-shadow);
+    transition-property: color, background-color, box-shadow;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -744,7 +742,7 @@ button {
     /* transform: translateX(-50%);
     transform: translateY(-50%); */
     transform: translate(-50%, -50%) scale(1);
-    transition: var(--trnz-property-transform);
+    transition: transform;
     transition: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -804,7 +802,7 @@ button {
     text-decoration: none;
     color: inherit;
 
-    transition-property: var(--trnz-property-border), var(--trnz-property-shadow);
+    transition-property: border, box-shadow;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
@@ -870,7 +868,7 @@ button {
     left: 0;
     transform: translateY(101%);
 
-    transition-property: var(--trnz-property-transform);
+    transition-property: transform;
     transition-duration: var(--trnz-duration);
     transition-timing-function: var(--trnz-tim-fnct);
 
